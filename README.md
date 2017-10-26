@@ -1,23 +1,16 @@
-Simple Python Worker on Cloud Foundry using Python-CFWorker Module
+Simple Python Oracle Worker on Cloud Foundry using Python-CFWorker Module
 ================================================================================
 
-This is a sample application showing how to deploy a simple Python worker
+This is a sample application showing how to deploy a simple Python Oracle worker
 using Cloud Foundry and the CFWorker module (Flask + Multiprocessing)
 
+Note this repo only brings in the Oracle dependency, it does not show how to leverage it
 
 To Deploy on Cloud Foundry
 ================================================================================
 
-Update the manifest.yml file name parameter to your app
-
-Add the CF port parameter to the cfworker
-
 ```
-cfworker.cfworker(port=<port>)
-```
-
-```
-cf push
+cf push -b https://github.com/ihuston/python-conda-buildpack
 ```
 
 license
