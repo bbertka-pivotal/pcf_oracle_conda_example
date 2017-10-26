@@ -1,0 +1,6 @@
+---
+applications:
+- name: cxoracle_microservice
+  host: cxoracle
+  memory: 128M
+  instances: 1
